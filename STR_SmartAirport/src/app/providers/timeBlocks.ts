@@ -12,9 +12,9 @@ export class TimeBlockProvider {
   constructor () {
     // Passenger journey start point.
     // todo: revert with PASSENGER_START to get the whole journey.
-    this.addTimeBlock(TimeBlockType.STR_ENTRANCE, SectorType.PASSENGER_HOME, 30, false);
+    this.addTimeBlock(TimeBlockType.STR_ENTRANCE, SectorType.STR_PUBLIC_SPACE, 30, false);
     // Transportation to airport.
-    this.addTimeBlock(TimeBlockType.PUBLIC_TRAIN, SectorType.TRANSPORTATION, 20, false);
+    this.addTimeBlock(TimeBlockType.STR_GATE, SectorType.STR_SECURE_SPACE, 20, false);
     // Passenger journey end point.
     this.addTimeBlock(TimeBlockType.PASSENGER_END, SectorType.PASSENGER_DESTINATION, 1, false);
   }
